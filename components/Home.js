@@ -34,7 +34,7 @@ function Home() {
     </div>
   );
 
-//mettre en place les cartes movies via l'api themoviedatabase
+//mettre en place les cartes movies via l'api themoviedatabase 
   const [moviesData, setMoviesData] = useState([]);
 
  useEffect(() => {

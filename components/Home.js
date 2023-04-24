@@ -40,15 +40,6 @@ function Home(props) {
 //Plus vraiment besoin de setter ici car l'état intial est props.data
   const [moviesData, setMoviesData] = useState(props.data); // props.data : le nom qu'on lui a donné dans index. Récupère les films fetchés
 
-//inutile maintenant
-//  useEffect(() => {
-//    fetch('https://mymoviz-back-two.vercel.app/movies')
-//      .then(response => response.json())
-//      .then(data => {
-//        setMoviesData(data.movies);
-//      });
-//  }, []);
-
 
   const movies = moviesData.map((data, i) => {
     const isLiked = likedMovies.some(movie => movie === data.title);
